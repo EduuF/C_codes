@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "sort_bubble.c"
+#include "sort_merge.c"
 
 int main(){
-    int vector[] = {6, 7, 1, 9, 10, 3, 4 ,5, 2, 8};
+    int vector[10] = {5, 7, 3, 1, 6, 8, 4 ,2, 0, 10};
 
-    sort_bubble(vector, 10);
+    merge_sort(vector, 0, 10-1);
 
     for(int i=0; i<10; i++){
         printf("%d\n", vector[i]);
